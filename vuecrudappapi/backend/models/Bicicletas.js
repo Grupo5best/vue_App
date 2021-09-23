@@ -17,6 +17,9 @@ let BiciSchema = new Schema({
   precio: {
     type: Number
   },
+  descripcion: {
+    type: String
+  },
 }, {
   collection: 'bicicletas'
 })

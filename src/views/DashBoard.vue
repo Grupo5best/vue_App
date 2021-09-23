@@ -18,6 +18,7 @@
                           <th scope="col">Color</th>
                           <th scope="col">Tamaño</th>
                           <th scope="col">Precio</th>
+                             <th scope="col">Descripcion </th>
                           <th scope="col">Acciones</th>
                       </tr>
                   </thead>
@@ -28,6 +29,7 @@
                   <td>{{ indice.color }}</td>
                   <td>{{ indice.tamaño }}</td>
                   <td>{{ indice.precio }}</td>
+                  <td>{{ indice.descripcion }}</td>
                   <td>
                        <router-link :to="{name: 'edit', params: { id: indice._id }}" class="btn btn-success">Editar
                        </router-link>
@@ -53,10 +55,10 @@
        <center><p>Formulario de registro </p></center>
 
 
-<form @submit.prevent="handleSubmitForm">
+<form @submit.prevent="FunctionCrearBicicleta">
   <div class="mb-3">
     <label for="exampleFormControlInput1" class="form-label">Referencia</label>
-    <input type="text" class="form-control"   v-model="Bicis.referencia" placeholder="ABC001">
+    <input type="text"  class="form-control"   v-model="Bicis.referencia" placeholder="ABC001">
   </div>
   
     <div class="mb-3">
@@ -79,7 +81,11 @@
     <input type="number" class="form-control"  v-model="Bicis.precio"  placeholder="00000">
   </div>
 
-    
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Descripción</label>
+    <input type="text" class="form-control"  v-model="Bicis.descripcion"  >
+  </div>
+
 <button class="btn btn-danger btn-block">Crear</button>
         
   </form>
@@ -120,7 +126,8 @@ import axios from "axios";
                  nombre: '',
                  color: '',
                  tamaño: '',
-                 precio: ''
+                 precio: '',
+                 descripcion: ''
                 }
             }
         },
@@ -142,7 +149,7 @@ import axios from "axios";
                 }
             },
 
-            handleSubmitForm() {
+            FunctionCrearBicicleta() {
                 let apiURL = 'http://localhost:4000/api/create-bici';
                 
                 axios.post(apiURL, this.Bicis).then(() => {
@@ -154,7 +161,8 @@ import axios from "axios";
                     nombre: '',
                     color: '',
                     tamaño: '',
-                    precio: ''
+                    precio: '',
+                    descripcion : ''
                   }
                 })
             }
