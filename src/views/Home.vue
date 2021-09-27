@@ -7,7 +7,7 @@
         id="mainNav"
       >
         <div class="container">
-          <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
+          <a class="navbar-brand" href="#page-top">bici di lusso</a>
           <button
             class="
               navbar-toggler
@@ -24,24 +24,24 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            Menu
+            Menú
             <i class="fas fa-bars"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item mx-0 mx-lg-1">
                 <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio"
-                  >Portfolio</a
+                  >Catálogo</a
                 >
               </li>
               <li class="nav-item mx-0 mx-lg-1">
                 <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about"
-                  >About</a
+                  >Nosotros</a
                 >
               </li>
               <li class="nav-item mx-0 mx-lg-1">
                 <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact"
-                  >Contact</a
+                  >Contacto</a
                 >
               </li>
               <li class="nav-item mx-0 mx-lg-1">
@@ -49,7 +49,7 @@
                   class="nav-link py-3 px-0 px-lg-3 rounded"
                   v-on:click="saludar"
                   target="_blank"
-                  >Ejemplo CRUD Bici</a
+                  >Inventario</a
                 >
               </li>
             </ul>
@@ -66,7 +66,7 @@
             alt="..."
           />
           <!-- Masthead Heading-->
-          <h1 class="masthead-heading text-uppercase mb-0">Start Bootstrap</h1>
+          <h1 class="masthead-heading text-uppercase mb-0">Tienda en línea</h1>
           <!-- Icon Divider-->
           <div class="divider-custom divider-light">
             <div class="divider-custom-line"></div>
@@ -75,7 +75,7 @@
           </div>
           <!-- Masthead Subheading-->
           <p class="masthead-subheading font-weight-light mb-0">
-            Graphic Artist - Web Designer - Illustrator
+            Bicicleta de lujo para todos los gustos
           </p>
         </div>
       </header>
@@ -90,7 +90,7 @@
               mb-0
             "
           >
-            Portfolio
+            Catálogo
           </h2>
           <!-- Icon Divider-->
           <div class="divider-custom">
@@ -141,7 +141,7 @@
           <h2
             class="page-section-heading text-center text-uppercase text-white"
           >
-            About
+            Nosotros
           </h2>
 
           <div class="divider-custom divider-light">
@@ -153,17 +153,12 @@
           <div class="row">
             <div class="col-lg-4 ms-auto">
               <p class="lead">
-                Freelancer is a free bootstrap theme created by Start Bootstrap.
-                The download includes the complete source files including HTML,
-                CSS, and JavaScript as well as optional SASS stylesheets for
-                easy customization.
+                Misión 
               </p>
             </div>
             <div class="col-lg-4 me-auto">
               <p class="lead">
-                You can create your own custom avatar for the masthead, change
-                the icon in the dividers, and add your email address to the
-                contact form to make it fully functional!
+                Visión
               </p>
             </div>
           </div>
@@ -174,7 +169,7 @@
               href="https://startbootstrap.com/theme/freelancer/"
             >
               <i class="fas fa-download me-2"></i>
-              Free Download!
+              Descargar catálogo
             </a>
           </div>
         </div>
@@ -189,7 +184,7 @@
               mb-0
             "
           >
-            Contact Me
+            Contacto
           </h2>
 
           <div class="divider-custom">
@@ -209,7 +204,7 @@
                     placeholder="Enter your name..."
                     data-sb-validations="required"
                   />
-                  <label for="name">Full name</label>
+                  <label for="name">Nombre completo</label>
                   <div
                     class="invalid-feedback"
                     data-sb-feedback="name:required"
@@ -226,7 +221,7 @@
                     placeholder="name@example.com"
                     data-sb-validations="required,email"
                   />
-                  <label for="email">Email address</label>
+                  <label for="email">Correo electrónico</label>
                   <div
                     class="invalid-feedback"
                     data-sb-feedback="email:required"
@@ -246,7 +241,7 @@
                     placeholder="(123) 456-7890"
                     data-sb-validations="required"
                   />
-                  <label for="phone">Phone number</label>
+                  <label for="phone">Número telefónico</label>
                   <div
                     class="invalid-feedback"
                     data-sb-feedback="phone:required"
@@ -264,7 +259,7 @@
                     style="height: 10rem"
                     data-sb-validations="required"
                   ></textarea>
-                  <label for="message">Message</label>
+                  <label for="message">Mensaje</label>
                   <div
                     class="invalid-feedback"
                     data-sb-feedback="message:required"
@@ -298,7 +293,7 @@
                   id="submitButton"
                   type="submit"
                 >
-                  Send
+                  Enviar
                 </button>
               </form>
             </div>
