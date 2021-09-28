@@ -246,7 +246,7 @@
                     class="invalid-feedback"
                     data-sb-feedback="phone:required"
                   >
-                    A phone number is required.
+                    Se requiere un número telefónico
                   </div>
                 </div>
 
@@ -264,13 +264,13 @@
                     class="invalid-feedback"
                     data-sb-feedback="message:required"
                   >
-                    A message is required.
+                    Se requiere un mensaje
                   </div>
                 </div>
 
                 <div class="d-none" id="submitSuccessMessage">
                   <div class="text-center mb-3">
-                    <div class="fw-bolder">Form submission successful!</div>
+                    <div class="fw-bolder">Envío exitoso!</div>
                     To activate this form, sign up at
                     <br />
                     <a href="https://startbootstrap.com/solution/contact-forms"
@@ -284,7 +284,7 @@
                 <!-- an error submitting the form-->
                 <div class="d-none" id="submitErrorMessage">
                   <div class="text-center text-danger mb-3">
-                    Error sending message!
+                    Error al enviar el mensaje!
                   </div>
                 </div>
                 <!-- Submit Button-->
@@ -306,16 +306,17 @@
           <div class="row">
             <!-- Footer Location-->
             <div class="col-lg-4 mb-5 mb-lg-0">
-              <h4 class="text-uppercase mb-4">Location</h4>
+              <h4 class="text-uppercase mb-4">Desarrollo</h4>
               <p class="lead mb-0">
-                2215 John Daniel Drive
+                Proyecto del Subgrupo 5 Grupo 59
                 <br />
-                Clark, MO 65243
+                Universidad Tecnológica de Pereira <br>
+                MisiónTIC 2022 
               </p>
             </div>
             <!-- Footer Social Icons-->
             <div class="col-lg-4 mb-5 mb-lg-0">
-              <h4 class="text-uppercase mb-4">Around the Web</h4>
+              <h4 class="text-uppercase mb-4">Redes sociales</h4>
               <a class="btn btn-outline-light btn-social mx-1" href="#!"
                 ><i class="fab fa-fw fa-facebook-f"></i
               ></a>
@@ -331,12 +332,10 @@
             </div>
             <!-- Footer About Text-->
             <div class="col-lg-4">
-              <h4 class="text-uppercase mb-4">About Freelancer</h4>
+              <h4 class="text-uppercase mb-4">Tienda Bici di lusso</h4>
               <p class="lead mb-0">
-                Freelance is a free to use, MIT licensed Bootstrap theme created
-                by
-                <a href="http://startbootstrap.com">Start Bootstrap</a>
-                .
+                <a href="#page-top">Ir al inicio</a>
+                
               </p>
             </div>
           </div>
@@ -393,21 +392,21 @@
                     <!-- Portfolio Modal - Image-->
                     <img
                       class="img-fluid rounded mb-5"
-                      src="@/assets/img/portfolio/cabin.png"
+                      src="http://drive.google.com/uc?export=view&id=18W6TOAdQ84b8TFN25mgNDg1V5AEERiJv"
                       alt="..."
                     />
                     <!-- Portfolio Modal - Text-->
                     <p class="mb-4">
-                      Refrencias = {{ bicicleta.referencia }}
+                      Refrencia {{ bicicleta.referencia }}
                     </p>
                     <p class="mb-4">
-                      Color = {{ bicicleta.color }}
+                      Color {{ bicicleta.color }}
                     </p>
                     <p class="mb-4">
-                      Tamaño = {{ bicicleta.tamaño }}
+                      Tamaño {{ bicicleta.tamaño }}
                     </p>
                     <p class="mb-4">
-                      Precio = {{ bicicleta.precio }}
+                      Precio {{ bicicleta.precio }}
                     </p>
                     <button
                       class="btn btn-primary"
