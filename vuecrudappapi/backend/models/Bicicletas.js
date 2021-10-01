@@ -20,6 +20,12 @@ let BiciSchema = new Schema({
   descripcion: {
     type: String
   },
+  cantidad : {
+    type: Number
+  },
+  url_img : {
+    type: String
+  },
 }, {
   collection: 'bicicletas'
 })
