@@ -26,27 +26,20 @@ BiciRoute.route('/').get((req, res) => {
   })
 });
 
-// EDIT BICI
-BiciRoute.route('/edit-bici/:id').get((req, res) => {
-  BicisModels.findById(req.params.id, (error, data) => {
-    if (error) {
-      return next(error)
-    } else {
-      res.json(data)
-    }
-  })
-})
+
+
 
 //UPDATE 
-BiciRoute.route('/update-bici/:id').post((req, res, next) => {
-  BicisModels.findByIdAndUpdate(req.params.id, {
+BiciRoute.route('/update-bici').post((req, res, next) => {
+ 
+  BicisModels.findByIdAndUpdate(req.body._id, {
     $set: req.body
   }, (error, data) => {
     if (error) {
       return next(error);
     } else {
       res.json(data)
-      console.log('Bici actualizada xd !')
+      
     }
   })
 })
