@@ -64,23 +64,23 @@
 <form @submit.prevent="FunctionCrearBicicleta">
   <div class="mb-3">
     <label for="exampleFormControlInput1" class="form-label">Referencia</label>
-    <input type="text"  class="form-control"   v-model="Bicis.referencia" >
+    <input type="text"  class="form-control"   v-model="Bicis_ins.referencia" >
   </div>
   
     <div class="mb-3">
     <label for="exampleFormControlInput1" class="form-label">Nombre de la bicicleta</label>
-    <input type="text" class="form-control"  v-model="Bicis.nombre"  >
+    <input type="text" class="form-control"  v-model="Bicis_ins.nombre"  >
   </div>
 
   <div class="mb-3">
     <label for="exampleFormControlInput1" class="form-label">Color</label>
-    <input type="text" class="form-control"  v-model="Bicis.color" >
+    <input type="text" class="form-control"  v-model="Bicis_ins.color" >
   </div>
   
   <div class="mb-3">
     <label for="exampleFormControlInput1" class="form-label">Tamaño</label>
    
-    <select class="form-select"  v-model="Bicis.tamaño">
+    <select class="form-select"  v-model="Bicis_ins.tamaño">
       <option selected>Grande</option>  
       <option>Mediano</option>  
       <option>Pequeño</option>  
@@ -90,23 +90,23 @@
 
     <div class="mb-3">
     <label for="exampleFormControlInput1" class="form-label">Precio</label>
-    <input type="number" class="form-control"  v-model="Bicis.precio" >
+    <input type="number" class="form-control"  v-model="Bicis_ins.precio" >
   </div>
 
   <div class="mb-3">
     <label for="exampleFormControlInput1" class="form-label">Cantidad</label>
-    <input type="number" class="form-control"  v-model="Bicis.cantidad"  >
+    <input type="number" class="form-control"  v-model="Bicis_ins.cantidad"  >
   </div>
 
   <div class="mb-3">
     <label for="exampleFormControlInput1" class="form-label">Ingresa url imagen de la bicicleta</label>
-    <input type="text" class="form-control"  v-model="Bicis.url_img"  >
+    <input type="text" class="form-control"  v-model="Bicis_ins.url_img"  >
   </div>
 
   <div class="mb-3">
     <label for="exampleFormControlInput1" class="form-label">Descripción </label>
   
-    <textarea class="form-control" name="textarea" rows="3" cols="15"  v-model="Bicis.descripcion"></textarea>
+    <textarea class="form-control" name="textarea" rows="3" cols="15"  v-model="Bicis_ins.descripcion"></textarea>
   </div>
 
 <button class="btn btn-success btn-block">Guardar bicicleta</button>
@@ -226,6 +226,17 @@ import axios from "axios";
                  url_img: ''
                  ,id : ''
                 },
+                   Bicis_ins: {
+                 referencia: '',
+                 nombre: '',
+                 color: '',
+                 tamaño: '',
+                 precio: '',
+                 descripcion: '',
+                 cantidad: '',
+                 url_img: ''
+                 ,id : ''
+                },
             }
         },
          created() {
@@ -253,10 +264,10 @@ import axios from "axios";
             FunctionCrearBicicleta() {
                 let apiURL = 'http://localhost:4000/api/create-bici';
                 
-                axios.post(apiURL, this.Bicis).then(() => {
+                axios.post(apiURL, this.Bicis_ins).then(() => {
       
                 alert("Bicicleta añadida al inventario exitosamente");
-                this.Bicis = '';
+                this.Bicis_ins = '';
                 location.reload()
                 })
             },
