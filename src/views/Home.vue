@@ -414,7 +414,7 @@
                       data-bs-dismiss="modal"
                       v-if="bicicleta.cantidad > 0"
                     >
-                      <i class="fas fa-times fa-fw"></i>
+                      <i class="fas fa-check fa-fw"></i>
                       Comprar
                     </button>
                     <button
