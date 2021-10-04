@@ -418,8 +418,8 @@
                       Comprar
                     </button>
                     <button
-                      class="btn btn-primary"
-                      href="#!"
+                      class="btn btn-red"
+                      href="#portfolio"
                       data-bs-dismiss="modal"
                       v-if="bicicleta.cantidad < 1"
                     >
