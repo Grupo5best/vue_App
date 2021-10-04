@@ -62,7 +62,7 @@
           <!-- Masthead Avatar Image-->
           <img
             class="masthead-avatar mb-5"
-            src="@/assets/img/avataaars.svg"
+            src="http://drive.google.com/uc?export=view&id=1SfHKaTEyohCZAPyENjQVDUexdGCZGFwJ"
             alt="..."
           />
           <!-- Masthead Heading-->
@@ -127,7 +127,7 @@
                 </div>
                 <img
                   class="img-fluid"
-                  src="https://tubici.com/wp-content/uploads/2019/12/TUBICI-BIKE-SHOP-GW-HYENA-AZUL-PETROLEO-NEON-1-1.jpg"
+                  :src="bicicleta.url_img"
                   alt="..."
                 />
               </div>
@@ -153,17 +153,17 @@
           <div class="row">
             <div class="col-lg-4 ms-auto">
               <p class="lead">
-                Misión 
+                Misión: <br>Convertirnos en la tienda en línea aliada de sus mejores experiencias deportivas. 
               </p>
             </div>
             <div class="col-lg-4 me-auto">
               <p class="lead">
-                Visión
+                Visión: <br>Para el 2022 ser líderes y pioneros en la venta de bicicletas que acompañen tus rutas y espíritu aventurero.
               </p>
             </div>
           </div>
 
-          <div class="text-center mt-4">
+          <!-- <div class="text-center mt-4">
             <a
               class="btn btn-xl btn-outline-light"
               href="https://startbootstrap.com/theme/freelancer/"
@@ -171,7 +171,7 @@
               <i class="fas fa-download me-2"></i>
               Descargar catálogo
             </a>
-          </div>
+          </div> -->
         </div>
       </section>
 
@@ -392,7 +392,7 @@
                     <!-- Portfolio Modal - Image-->
                     <img
                       class="img-fluid rounded mb-5"
-                      src="http://drive.google.com/uc?export=view&id=18W6TOAdQ84b8TFN25mgNDg1V5AEERiJv"
+                      :src="bicicleta.url_img"
                       alt="..."
                     />
                     <!-- Portfolio Modal - Text-->
@@ -412,9 +412,19 @@
                       class="btn btn-primary"
                       href="#!"
                       data-bs-dismiss="modal"
+                      v-if="bicicleta.cantidad > 0"
                     >
                       <i class="fas fa-times fa-fw"></i>
-                      Close Window
+                      Comprar
+                    </button>
+                    <button
+                      class="btn btn-primary"
+                      href="#!"
+                      data-bs-dismiss="modal"
+                      v-if="bicicleta.cantidad < 1"
+                    >
+                      <i class="fas fa-times fa-fw"></i>
+                      Producto no disponible
                     </button>
                   </div>
                 </div>
