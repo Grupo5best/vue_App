@@ -1,8 +1,70 @@
 <template>
+
+
+
+
+
   <div class="DashBoard">
 
+
+
+   <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+          <a class="navbar-brand" href="http://localhost:8080/">bici di lusso</a>
+          <button
+            class="
+              navbar-toggler
+              text-uppercase
+              font-weight-bold
+              bg-primary
+              text-white
+              rounded
+            "
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            Menú
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item mx-0 mx-lg-1">
+                <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio"
+                  >Catálogo</a
+                >
+              </li>
+              <li class="nav-item mx-0 mx-lg-1">
+                <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about"
+                  >Nosotros</a
+                >
+              </li>
+              <li class="nav-item mx-0 mx-lg-1">
+                <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact"
+                  >Contacto</a
+                >
+              </li>
+              <li class="nav-item mx-0 mx-lg-1">
+                <a
+                  class="nav-link py-3 px-0 px-lg-3 rounded"
+                  v-on:click="saludar"
+                  target="_blank"
+                  >Inventario</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+
+
+
    
-            <br> <br>
+            <br> <br>   <br> <br>   <br> <br>
               <div class="container izquierda">
 
       <h1>Inventario de bicicletas</h1>
@@ -49,6 +111,71 @@
               </div>
 
          
+
+
+
+
+
+
+
+ <footer class="footer text-center">
+        <div class="container">
+          <div class="row">
+            <!-- Footer Location-->
+            <div class="col-lg-4 mb-5 mb-lg-0">
+              <h4 class="text-uppercase mb-4">Desarrollo</h4>
+              <p class="lead mb-0">
+                Proyecto del Subgrupo 5 Grupo 59
+                <br />
+                Universidad Tecnológica de Pereira <br>
+                MisiónTIC 2022 
+              </p>
+            </div>
+            <!-- Footer Social Icons-->
+            <div class="col-lg-4 mb-5 mb-lg-0">
+              <h4 class="text-uppercase mb-4">Redes sociales</h4>
+              <a class="btn btn-outline-light btn-social mx-1" href="#!"
+                ><i class="fab fa-fw fa-facebook-f"></i
+              ></a>
+              <a class="btn btn-outline-light btn-social mx-1" href="#!"
+                ><i class="fab fa-fw fa-twitter"></i
+              ></a>
+              <a class="btn btn-outline-light btn-social mx-1" href="#!"
+                ><i class="fab fa-fw fa-linkedin-in"></i
+              ></a>
+              <a class="btn btn-outline-light btn-social mx-1" href="#!"
+                ><i class="fab fa-fw fa-dribbble"></i
+              ></a>
+            </div>
+            <!-- Footer About Text-->
+            <div class="col-lg-4">
+              <h4 class="text-uppercase mb-4">Tienda Bici di lusso</h4>
+              <p class="lead mb-0">
+                <a href="#page-top">Ir al inicio</a>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- Copyright Section-->
+      <div class="copyright py-4 text-center text-white">
+        <div class="container">
+          <small>Copyright &copy; Your Website 2021</small>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
  <!-- MODAL REGISTRO --> 
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -246,6 +373,9 @@ import axios from "axios";
             })
         },
         methods: {
+           saludar() {
+            this.$router.push("Dashboard");
+            },
               sendInfo(item) {
                this.Bicis = item;
               },
