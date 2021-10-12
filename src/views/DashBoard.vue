@@ -10,7 +10,7 @@
 
    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
         <div class="container">
-          <a class="navbar-brand" href="http://localhost:8080/">bici di lusso</a>
+          <a class="navbar-brand" href="./">bici di lusso</a>
           <button
             class="
               navbar-toggler
@@ -32,17 +32,17 @@
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item mx-0 mx-lg-1">
-                <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio"
+                <a class="nav-link py-3 px-0 px-lg-3 rounded" href="./#portfolio"
                   >Catálogo</a
                 >
               </li>
               <li class="nav-item mx-0 mx-lg-1">
-                <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about"
+                <a class="nav-link py-3 px-0 px-lg-3 rounded" href="./#about"
                   >Nosotros</a
                 >
               </li>
               <li class="nav-item mx-0 mx-lg-1">
-                <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact"
+                <a class="nav-link py-3 px-0 px-lg-3 rounded" href="./#contact"
                   >Contacto</a
                 >
               </li>
@@ -51,8 +51,7 @@
                   class="nav-link py-3 px-0 px-lg-3 rounded"
                   v-on:click="saludar"
                   target="_blank"
-                  >Inventario</a
-                >
+                  >Inventario</a>
               </li>
             </ul>
           </div>
@@ -151,7 +150,7 @@
             <div class="col-lg-4">
               <h4 class="text-uppercase mb-4">Tienda Bici di lusso</h4>
               <p class="lead mb-0">
-                <a href="#page-top">Ir al inicio</a>
+                <a href="./#page-top">Volver al inicio</a>
                 
               </p>
             </div>
