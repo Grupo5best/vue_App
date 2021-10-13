@@ -150,7 +150,7 @@
             <div class="col-lg-4">
               <h4 class="text-uppercase mb-4">Tienda Bici di lusso</h4>
               <p class="lead mb-0">
-                <a href="./#page-top">Volver al inicio</a>
+                <a href="/Dashboard">Volver al inicio</a>
                 
               </p>
             </div>
@@ -160,7 +160,7 @@
       <!-- Copyright Section-->
       <div class="copyright py-4 text-center text-white">
         <div class="container">
-          <small>Copyright &copy; Your Website 2021</small>
+          <small>Copyright &copy; www.tienda-bdl.com</small>
         </div>
       </div>
 
